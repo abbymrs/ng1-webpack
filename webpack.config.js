@@ -25,14 +25,15 @@ module.exports = {
             './node_modules/angular-resource/angular-resource.js',
             './node_modules/angular-ui-router/release/angular-ui-router.js',
             './node_modules/ngstorage/ngStorage.js',
+            './node_modules/angular-load/angular-load.js',
         ]
     },
     devtool: 'cheap-module-source-map',
-    debug:true,
+    debug: true,
     module: {
         loaders: [{
             test: /\.css$/,
-            loaders: ['to-string-loader', 'css-loader']
+            loaders: ['to-string-loader','style-loader', 'css-loader']
         }, {
             test: /\.html$/,
             loader: 'raw-loader'
@@ -69,8 +70,8 @@ module.exports = {
         }
     },
     devServer: {
-    	port: 5000,
-    	host: 'localhost',
+        port: 5000,
+        host: 'localhost',
         historyApiFallback: true,
         watchOptions: {
             aggregateTimeout: 300,
@@ -80,7 +81,7 @@ module.exports = {
         proxy: {
             '/api/*': {
                 target: 'http://localhost:8000',
-                secure: false
+                secure: false,
             }
         }
     },

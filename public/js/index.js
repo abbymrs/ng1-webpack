@@ -1,5 +1,6 @@
 angular.module('mainApp', [
         'ui.router',
+        'angularLoad',
         'Hello',
         'Name',
         'rangeValidator',
@@ -13,7 +14,7 @@ angular.module('mainApp', [
             .state('all', {
                 url: '/all',
                 template: '<div ui-view></div>',
-               
+
             })
             .state('all.demo1', {
                 url: '/demo1',
@@ -90,6 +91,11 @@ angular.module('mainApp', [
                 return output;
             }
         }
+    })
+    .run(function(angularLoad){
+        angularLoad.loadCSS('./node_modules/bootstrap/dist/css/bootstrap.css');
+        angularLoad.loadCSS('./public/css/index.css');
+        angularLoad.loadCSS('./public/css/ball-pulse.css');
     })
     .controller('mainCtrl', function($scope, $state, $location, $window, $log) {
         var index;
