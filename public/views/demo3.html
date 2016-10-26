@@ -1,0 +1,79 @@
+<style>
+.carousel {
+    width: 800px;
+    height: 300px;
+    animation: slider 8s infinite;
+}
+
+@keyframes slider {
+    0% {
+        background: url(/public/img/1.jpg);
+    }
+    20% {
+        background: url(/public/img/2.jpg);
+    }
+    40% {
+        background: url(/public/img/3.jpg);
+    }
+    60% {
+        background: url(/public/img/4.jpg);
+    }
+    80% {
+        background: url(/public/img/5.jpg);
+    }
+    100% {
+        background: url(/public/img/1.jpg);
+    }
+}
+</style>
+<div class="carousel"></div>
+
+<div id="nameComponent">HTML 5在线</div>
+<template id="nameComponentTemplate">
+    <style>
+    .outer {
+        border: 2px solid brown;
+        border-radius: 1em;
+        background: red;
+        font-size: 20pt;
+        width: 12em;
+        height: 7em;
+        text-align: center;
+    }
+    
+    .boilerplate {
+        color: white;
+        font-family: sans-serif;
+        padding: 0.5em;
+    }
+    
+    .name {
+        color: black;
+        background: white;
+        font-family: "宋体";
+        font-size: 30pt;
+        padding-top: 0.2em;
+    }
+    </style>
+    <div class="outer">
+        <div class="boilerplate">
+            你好，欢迎来到
+        </div>
+        <div class="name">
+            <!-- HTML 5在线 -->
+            <content></content>
+        </div>
+    </div>
+</template>
+
+<ul>
+    <li ng-repeat="user in users">
+        <span>{{user.name}}</span>
+        <span>{{user.age}}</span>
+    </li>
+</ul>
+<ul>
+    <li ng-repeat="item in obj">{{item}}</li>
+</ul>
+<pre>{{getData()}}</pre>
+<div>{{filter}}</div>

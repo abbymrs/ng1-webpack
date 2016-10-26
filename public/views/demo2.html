@@ -1,0 +1,25 @@
+<p>second demo</p>
+<span class="upload">
+	<i><input type="file" onchange="upload(this)"></i>
+</span>
+<div class="img-wrap"></div>
+<hello></hello>
+<my-name></my-name>
+
+<div>{{number()}}</div>
+<input type="text" ng-model="str" ng-model-options="{debounce:500}">
+<div>{{str|turnToArray}} 类型 -- {{type(str|turnToArray)}}</div>
+
+<form name="form">
+	<input type="number" name="num" ng-model="input" ng-model-options="{debounce:500}" range><br><br>
+	<div ng-if="form.num.$error.range"> the number need to be 1~10</div>
+
+	<input type="text" name="name" ng-model="name" ng-model-options="{updateOn:'blur'}" match>
+	<div ng-if="form.name.$pending.match">checking is the name is available....</div>
+	<div ng-if="form.name.$error.match"> the name is not available</div>
+	<div style="display: none">{{form.name}}</div>
+
+	<div><input type="text" ng-model="change" ng-change="getCount()">{{num}}</div>
+</form>
+
+<button ng-click="go()">go to some site</button>

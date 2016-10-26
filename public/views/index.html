@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demos</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/public/css/index.css">
+	<link rel="stylesheet" href="/public/css/ball-pulse.css">
+	<base href="/">
+</head>
+<body ng-app="mainApp" ng-controller="mainCtrl">
+	<div class="container wrapper">
+		<div>
+			<input type="button" value="back" class="back btn" ng-click="back()">
+		</div>
+		<div class="col-md-2 nav-list">
+			<ul>
+				<li><a ui-sref="all.demo1">demo1</a></li>
+				<li><a ui-sref="all.demo2">demo2</a></li>
+				<li><a ui-sref="all.demo3">demo3</a></li>
+			</ul>
+		</div>
+		<div class="col-md-9 col-md-offset-1">
+			<div ui-view></div>
+		</div>
+	</div>
+	<div class="container">
+		<name-detail names="names" on-click="onClick(names)"></name-detail>
+	</div>
+	
+</body>
+<script src="/webpack-dev-server.js"></script>
+</html>
