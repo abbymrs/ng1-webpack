@@ -1,0 +1,24 @@
+<style>
+	/*method 1*/
+	.layout1{position: relative;height: 200px;background-color: #fca;display: table;width: 600px;}
+	.layout1 .inner{width: 200px;height: 100px;background-color: lime;text-align: center;display: table-cell;vertical-align: middle;}
+	/*method2*/
+	.layout2{height: 200px;background-color: #fad;margin-top: 10px;text-align: center;}
+	.layout2::before{content:"";display: inline-block;height: 100%;vertical-align: middle;}
+	.layout2 .inner{padding: 50px;background-color: #afc;display: inline-block;text-align: center;vertical-align: middle;}
+	/*method3*/
+	.layout3{height: 200px;display: flex;align-items: center;justify-content: center;border: 1px solid #ddd;}
+	.layout3 .inner{background-color: #dca;text-align: center;padding: 50px;}
+</style>
+<div class="demo1">
+	<input type="button" value="click" ng-click="getInfo()">
+	<div class="layout1">
+		<div class="inner">hello world</div>
+	</div>
+	<div class="layout2">
+		<div class="inner">hello world</div>
+	</div>
+	<div class="layout3">
+		<div class="inner">hello world</div>
+	</div>
+</div>

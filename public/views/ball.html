@@ -1,0 +1,46 @@
+<section ngCloak>
+    <input type="button" value="show message" ng-click="showInfo()">
+    <ul class="old-msg">
+        <li>03:25:06 Calculate slice capacity.Ready.</li>
+        <li>03:25:51 Assign slice resources. Ready.</li>
+        <li>03:25:51 Deploy RAN resources. Ready.</li>
+        <li>&nbsp;&nbsp;03:28:39 Optimize user-plane stack split. Ready.</li>
+        <li>&nbsp;&nbsp;03:31:27 Install user-plane flowgraphs. Ready.</li>
+        <li>&nbsp;&nbsp;03:34:15 Compute control-plane function placement. Ready.</li>
+        <li>&nbsp;&nbsp;03:37:03 Install control-plane functions. Ready.</li>
+        <li>03:25:51 Deploy CORE-CP/CORE-UP resources. Ready.</li>
+        <li>&nbsp;&nbsp;Check VM resources. Ready.</li>
+        <li>&nbsp;&nbsp;03:27:24 Check virtual network resource. Ready.</li>
+        <li>&nbsp;&nbsp;04:04:33 Create VNFs. Ready.</li>
+        <li>03:25:51 Deploy SDN resource. Ready.</li>
+        <li>&nbsp;&nbsp;03:26:51 Check SDN nodes Ready.</li>
+        <li>&nbsp;&nbsp;03:26:51 Check SDN connection information. Ready.</li>
+        <li>&nbsp;&nbsp;03:26:51 Create SDN resource. Ready.</li>
+        <li>03:39:51 Configure RAN service. Ready.</li>
+        <li>04:05:03 Configure CORE-CP/CORE-UP service. Ready.</li>
+        <li>04:05:23 Finished. Ready.</li>
+    </ul>
+    <ul class="wrap-ul" ng-if="flag">
+        <li ng-repeat="data in datas" ng-if="data.status != 'none'">
+            <div ng-if="data.message.indexOf('@') ==-1">
+                <span>{{data.time}}</span>
+                <span>{{data.message}}</span>
+                <!-- ball animation -->
+                <div class="la-ball-pulse ball" ng-if="data.status == 'initialed'">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div ng-if="data.message.indexOf('@') != -1">
+                <span>&nbsp;&nbsp;{{data.time}}</span>
+                <span>{{slice(data.message)}}</span>
+                <div class="la-ball-pulse ball" ng-if="data.status == 'initialed'">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
