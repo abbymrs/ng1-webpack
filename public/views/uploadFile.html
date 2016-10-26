@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+    <style>
+    	*{margin: 0;padding: 0;}
+		.container{width: 600px;margin: 20px auto;}
+		.bar{margin: 10px 0;position: relative;width: 200px;height: 20px;border-radius: 5px;border: 1px solid #ddd;background-color: #eee;}
+		.inner{position: absolute;top: 0;left: 0;height: 100%;background-color: lightgreen;border-radius: 5px 0 0 5px;}
+    </style>
+</head>
+<body>
+	<div class="container">
+	    <div class="progress">
+	        <span class="value"></span>%
+	        <div class="bar">
+	        	<div class="inner"></div>
+	        </div>
+	    </div>
+	    <div class="files-box">
+	        <p>
+	            <input type="file" id="file">
+	        </p>
+	        <p>
+	            <input type="button" value="submit" class="submit">
+	        </p>
+	    </div>
+	</div>
+</body>
+<script src="../js/jquery-3.1.0.js"></script>
+<script>
+	var span = document.querySelector('.progress span');
+	var file = document.querySelector('#file');
+	var submit = document.querySelector('.submit');
+	var inner = document.querySelector('.inner');
+	var xhr = new XMLHttpRequest();
+	
+	file.onchange = function(e){
+		span.innerHTML = "";
+		inner.style.width = 0;
+		xhr.upload.onprogress = function(e){
+			if(e.lengthComputable){
+				var value = e.loaded/e.total * 100;
+				span.innerHTML = value;
+				inner.style.width = value + '%';
+				if(value == 100){
+					inner.style.borderRadius = '5px';
+				}
+			}
+			console.log(xhr.status,xhr.responseType);
+		}
+
+	};
+	submit.onclick = function(){
+		xhr.open('POST','/uploadImg',true);
+		xhr.setRequestHeader('accept-control-allow-origin', '*');
+		xhr.setRequestHeader('with-credentials',true);
+		xhr.send('img=pic');
+	}
+
+	function fn1(){
+		var btn = $('.container').filter('.submit');
+		return btn.val();
+	}
+	function fn2(){
+		var btn = $('.container').find('.submit');
+		return btn.val();
+	}
+	function test(fn,text) {
+		var start = Date.now();
+		var end,needTime;
+
+		fn();
+
+		end = Date.now();
+		needTime = end - start;
+		console.log('spend time: ' + needTime + ' ' + text);
+	}
+	test(fn1,'fn1');
+	test(fn2, 'fn2');
+
+</script>
+</html>
