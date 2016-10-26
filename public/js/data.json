@@ -1,0 +1,226 @@
+[{
+    "sliceName": "MBB",
+    "msgs": [{
+        "status": "none",
+        "message": "Calculate slice capacity.Ready.",
+        "time": "03:25:06"
+    }, {
+        "status": "none",
+        "message": "Assign slice resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "Deploy RAN resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Optimize user-plane stack split.",
+        "time": "03:28:39"
+    }, {
+        "status": "none",
+        "message": "@Install user-plane flowgraphs.",
+        "time": "03:31:27"
+    }, {
+        "status": "none",
+        "message": "@Compute control-plane function placement.",
+        "time": "03:34:15"
+    }, {
+        "status": "none",
+        "message": "@Install control-plane functions.",
+        "time": "03:37:03"
+    }, {
+        "status": "none",
+        "message": "Deploy CORE-CP/CORE-UP resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Check VM resources.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Check virtual network resource.",
+        "time": "03:27:24"
+    }, {
+        "status": "none",
+        "message": "@Create VNFs.",
+        "time": "04:04:33"
+    }, {
+        "status": "none",
+        "message": "Deploy SDN resource.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Check SDN nodes",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Check SDN connection information.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Create SDN resource.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "Configure RAN service.",
+        "time": "03:39:51"
+    }, {
+        "status": "none",
+        "message": "Configure CORE-CP/CORE-UP service.",
+        "time": "04:05:03"
+    }, {
+        "status": "none",
+        "message": "Finished.",
+        "time": "04:05:23"
+    }]},
+    {
+    "sliceName": "ULL",
+    "msgs": [{
+        "status": "none",
+        "message": "Calculate slice capacity.Ready.",
+        "time": "03:25:06"
+    }, {
+        "status": "none",
+        "message": "Assign slice resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "Deploy RAN resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Optimize user-plane stack split.",
+        "time": "03:28:39"
+    }, {
+        "status": "none",
+        "message": "@Install user-plane flowgraphs.",
+        "time": "03:31:27"
+    }, {
+        "status": "none",
+        "message": "@Compute control-plane function placement.",
+        "time": "03:34:15"
+    }, {
+        "status": "none",
+        "message": "@Install control-plane functions.",
+        "time": "03:37:03"
+    }, {
+        "status": "none",
+        "message": "Deploy CORE-CP/CORE-UP resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Check VM resources.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Check virtual network resource.",
+        "time": "03:27:24"
+    }, {
+        "status": "none",
+        "message": "@Create VNFs.",
+        "time": "04:04:33"
+    }, {
+        "status": "none",
+        "message": "Deploy SDN resource.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Check SDN nodes",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Check SDN connection information.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Create SDN resource.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "Configure RAN service.",
+        "time": "03:39:51"
+    }, {
+        "status": "none",
+        "message": "Configure CORE-CP/CORE-UP service.",
+        "time": "04:05:03"
+    }, {
+        "status": "none",
+        "message": "Finished.",
+        "time": "04:05:23"
+    }]},
+    {
+    "sliceName": "UHB",
+    "msgs": [{
+        "status": "none",
+        "message": "Calculate slice capacity.Ready.",
+        "time": "03:25:06"
+    }, {
+        "status": "none",
+        "message": "Assign slice resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "Deploy RAN resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Optimize user-plane stack split.",
+        "time": "03:28:39"
+    }, {
+        "status": "none",
+        "message": "@Install user-plane flowgraphs.",
+        "time": "03:31:27"
+    }, {
+        "status": "none",
+        "message": "@Compute control-plane function placement.",
+        "time": "03:34:15"
+    }, {
+        "status": "none",
+        "message": "@Install control-plane functions.",
+        "time": "03:37:03"
+    }, {
+        "status": "none",
+        "message": "Deploy CORE-CP/CORE-UP resources.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Check VM resources.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Check virtual network resource.",
+        "time": "03:27:24"
+    }, {
+        "status": "none",
+        "message": "@Create VNFs.",
+        "time": "04:04:33"
+    }, {
+        "status": "none",
+        "message": "Deploy SDN resource.",
+        "time": "03:25:51"
+    }, {
+        "status": "none",
+        "message": "@Check SDN nodes",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Check SDN connection information.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "@Create SDN resource.",
+        "time": "03:26:51"
+    }, {
+        "status": "none",
+        "message": "Configure RAN service.",
+        "time": "03:39:51"
+    }, {
+        "status": "none",
+        "message": "Configure CORE-CP/CORE-UP service.",
+        "time": "04:05:03"
+    }, {
+        "status": "none",
+        "message": "Finished.",
+        "time": "04:05:23"
+    }]
+}]
