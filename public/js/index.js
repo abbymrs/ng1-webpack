@@ -23,7 +23,7 @@ angular.module('mainApp', [
                         $location.path('/demo2');
                     };
                     $scope.getInfo = function() {
-                        $http.get('/query?name=abby&age=20').then(res => {
+                        $http.get('/api/query?name=abby&age=20').then(res => {
                             console.log(res);
                         });
                     };

@@ -1,4 +1,4 @@
 angular.module('dataService',['ngResource'])
 	.factory('data', function($resource){
-		return $resource('/getInfo',{},{});
+		return $resource('/api/getInfo',{},{});
 	});

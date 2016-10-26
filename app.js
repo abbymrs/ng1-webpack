@@ -67,20 +67,20 @@ app.get('/fetch', (req, res, next) => {
 // app.get('/upload', (req, res) => {
 //     res.sendFile(__dirname + '/public/views/uploadFile.html')
 // });
-app.get('api/getInfo', (req, res) => {
+app.get('/api/getInfo', (req, res) => {
     var obj = fs.readFileSync('./public/js/data.json');
     res.send(obj).end();
 });
-app.get('api/query', (req, res) => {
+app.get('/api/query', (req, res) => {
     console.log(req.query);
     res.send(req.query).end();
 });
 
-app.post('api/uploadImg', (req, res) => {
+app.post('/api/uploadImg', (req, res) => {
     console.log('received');
     res.end();
 });
-app.get('api/process', (req, res) => {
+app.get('/api/process', (req, res) => {
     console.log(process);
     res.send(process.env).end();
 });
