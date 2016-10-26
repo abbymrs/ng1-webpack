@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    cursor: pointer;
+}
+
+.wrap-ul,
+.old-msg {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #fad;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.ball,
+.ball > div {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border: 20px solid red;
+    border-color: red red red transparent;
+}
+
+.inner-arror {
+    width: 0;
+    height: 0;
+    border: 10px solid red;
+    border-color: blue blue blue transparent;
+}
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.nav-list {
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.nav-list li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.nav-list li:last-child {
+    border-bottom: 0;
+}
+
+.back {
+    margin-bottom: 10px;
+}
+
+.upload,
+.upload i {
+    display: inline-block;
+}
+
+.upload {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.upload i {
+    width: 24px;
+    height: 20px;
+    background: url(/img/camera.png) no-repeat 0 0/24px;
+    vertical-align: middle
+}
+
+.upload i input {
+    width: 24px;
+    height: 20px;
+    border: 1px solid red;
+    outline: none;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.tria {
+    position: relative;
+}
+.tria:before,
+.tria:after{
+    content:"";
+    width: 0;height: 0;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+.tria:before{
+    border-left-color: #f00;
+    right: -21px;
+}
