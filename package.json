@@ -1,0 +1,38 @@
+{
+  "name": "node-demos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.js --profile --watch -progress --color --content-base"
+  },
+  "author": "abby",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-storage": "0.0.15",
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "fs": "0.0.2",
+    "jquery": "^3.1.0",
+    "ngstorage": "^0.3.11",
+    "request": "^2.75.0",
+    "superagent": "^2.1.0",
+    "utility": "^1.8.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.0",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.24.0",
+    "raw-loader": "^0.5.1",
+    "script-loader": "^0.7.0",
+    "to-string-loader": "^1.1.5",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
