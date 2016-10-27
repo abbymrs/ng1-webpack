@@ -5,20 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
+const glob = require('glob');
+const matchesFiles = new glob.Glob('./public/js/*.js',{sync:true}).found; // match all files in the specified directory
 
 module.exports = {
     entry: {
-        app: [
-            './public/js/index.js',
-            './public/js/dataService.js',
-            './public/js/service.js',
-            './public/js/helloDirective.js',
-            './public/js/nameDirective.js',
-            './public/js/rangeValidator.js',
-            './public/js/matchValidator.js',
-            './public/js/nameComponent.js',
-            './public/js/ball.js',
-        ],
+        app: matchesFiles,
         vendor: [
             './public/vendor/jquery-3.1.0.js',
             './node_modules/angular/angular.js',
